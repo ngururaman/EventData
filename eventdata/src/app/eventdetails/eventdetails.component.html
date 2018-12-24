@@ -1,0 +1,14 @@
+<body>
+	<form>
+		<input type="button" value="Go back!" onclick="history.back()"
+			style="float: right;">
+	</form>
+	<h1>
+		<strong>EvenetDetails on </strong> {{eventDetails$.eventDate |
+		date:'short'}}
+	</h1>
+
+	<ul>
+		<li><p align="justify">{{eventDetails$.eventDetails}}</p></li>
+	</ul>
+</body>

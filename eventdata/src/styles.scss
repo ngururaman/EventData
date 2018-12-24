@@ -1,0 +1,98 @@
+/* Global styles to this file, and also can import other style files */
+
+$zero-value: 0;
+$line-height: 1;
+$a-color: #00A8FF;
+
+body {
+  margin: $zero-value;
+  background-color: powderblue;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+}
+
+p {
+  color: darkblue;
+  font-family: courier;
+  font-size: 100%;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 250px auto;
+  height: 100%;
+
+  #content {
+    padding: 30px 50px;
+
+    h1 {
+      font-size: 40px;
+      color: #0f0966;
+      text-transform: uppercase;
+      font-weight: bold;
+      line-height: $line-height;
+      text-align: center;
+      margin: 0px 50px 25px 50px;
+      padding-top: -60px;
+    }
+
+
+    h2 {
+      font-size: 50px;
+      color: #847bf7;
+      text-transform: uppercase;
+      font-weight: normal;
+      line-height: $line-height;
+      text-align: center;
+      margin: 0px 50px 0 50px;
+      padding-top: 0px;
+
+    }
+
+    h3 {
+      font-size: 50px;
+      color: #847bf7;
+      text-transform: uppercase;
+      font-weight: normal;
+      line-height: $line-height;
+      text-align: center;
+      margin: 0px 0 0;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
+
+    ul {
+      list-style-type: none;
+      margin: $zero-value;
+      padding: $zero-value;
+
+      li {
+        background: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 8px;
+
+        a {
+          font-size: 1.5em;
+          text-decoration: none;
+          font-weight: bold;
+          color: $a-color;
+        }
+
+        ul {
+          margin-top: 20px;
+
+          li {
+            padding: $zero-value;
+
+            a {
+              font-size: 1em;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+  }
+}

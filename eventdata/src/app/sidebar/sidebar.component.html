@@ -1,0 +1,25 @@
+
+<nav>
+	<br /> <br /> <br />
+	<div>
+		<ul>
+			<li>
+				<div class="form-group">
+					<label>EVENT START DATE</label> <input type="text"
+						[bsConfig]="dpConfig" [(ngModel)]="eventStartDate"
+						placeholder="start Date" class="form-control" bsDatepicker>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<br />
+	<div>
+		<label>EVENT END DATE RANGE</label>
+	</div>
+	<ngx-select-dropdown [options]="dropdownOptions" [(value)]="dataModel"></ngx-select-dropdown>
+	<br />
+	<button>
+		<a
+			routerLink="/events/eventsData/{{eventStartDate | date: 'yyyy-MM-dd'}}_{{dataModel}}">Submit</a>
+	</button>
+</nav>
